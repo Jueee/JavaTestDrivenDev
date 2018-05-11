@@ -1,6 +1,6 @@
 # JavaTestDrivenDev
 《Java 测试驱动开发》学习笔记
-##### 所用书籍
+##### 所用书籍 #####
 Farcic, Viktor, and Alex Garcia. Test-Driven Java Development. Packt Publishing Ltd, 2015.
 ### 本书目录及程序实现 ###
  - 一、[为何要关心测试驱动开发](src/main/java/com/java/testdriven/chapter01)
@@ -17,4 +17,3 @@ Farcic, Viktor, and Alex Garcia. Test-Driven Java Development. Packt Publishing 
     3.	[模拟](src/main/java/com/java/testdriven/chapter01/Course3Mocking.java)
     4.	[可执行的文档](src/main/java/com/java/testdriven/chapter01/Course4ExecutableDocument.java)
     5.	[无需调试](src/main/java/com/java/testdriven/chapter01/Course5NoDebugging.java)
-    6.	[小结](src/main/java/com/java/testdriven/chapter01/Course6Summary.java)
