@@ -1,3 +1,4 @@
 /.settings/*
 /target/*
+/test-output/*
 sync.xml

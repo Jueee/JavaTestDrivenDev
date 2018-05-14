@@ -1,7 +1,77 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.app.jueee</groupId>
-  <artifactId>JavaTestDrivenDev</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>JavaTestDrivenDev</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.app.jueee</groupId>
+	<artifactId>JavaTestDrivenDev</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>JavaTestDrivenDev</name>
+	<properties>
+		<java.version>1.8</java.version>
+		<junit.version>4.12</junit.version>
+		<testng.version>6.9.9</testng.version>
+		<hamcrest.version>1.3</hamcrest.version>
+		<assertj.version>2.5.0</assertj.version>
+	</properties>
+	<dependencies>
+		<!-- 测试框架 JUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+		</dependency>
+		<!-- 测试框架 TestNG -->
+		<dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+        </dependency>
+        <!-- 定义匹配规则的框架 Hamcrest -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>${hamcrest.version}</version>
+        </dependency>
+        <!-- 流式断言器 AssertJ -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+        </dependency>
+        <!-- MongoDB驱动程序 -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>2.11.3</version>
+        </dependency>
+        <!-- 能够轻松访问MongoDB集合的小型项目 Jongo -->
+        <dependency>
+            <groupId>org.jongo</groupId>
+            <artifactId>jongo</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <!-- 模拟框架 Mockito：创建测试替身 -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.8.4</version>
+        </dependency>
+        <!-- 模拟框架 EasyMock：创建测试替身 -->
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <version>3.4</version>
+        </dependency>
+        <!-- Web测试工具：Selenium -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>2.48.2</version>
+        </dependency>
+        <!-- Web测试工具：Selenide -->
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>2.17</version>
+        </dependency>
+	</dependencies>
 </project>
