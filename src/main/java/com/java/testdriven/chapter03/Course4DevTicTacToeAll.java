@@ -50,6 +50,18 @@ public class Course4DevTicTacToeAll {
 		}
 	}
 	
+	/**
+	 * 	判断当前位置是否为空
+	 *	@param x
+	 *	@param y
+	 *	@return
+	 */
+	public boolean isNullInBox(int x,int y) {
+		if (board[x-1][y-1] == '\0') {
+			return true;
+		}
+		return false;
+	}
 	
 	/**
 	 * 	为跟踪接下来该谁下，需要存储前一次下棋的玩家：
