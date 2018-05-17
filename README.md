@@ -58,4 +58,29 @@ Farcic, Viktor, and Alex Garcia. Test-Driven Java Development. Packt Publishing 
     	4.3	[需求3](src/main/java/com/java/testdriven/chapter03/Course4DevTicTacToe3.java)&nbsp;&nbsp;&nbsp;[测试用例](src/test/java/com/java/testdriven/chapter03/Course4DevTicTacToe3Test.java)  
     	4.4	[需求4](src/main/java/com/java/testdriven/chapter03/Course4DevTicTacToe4.java)&nbsp;&nbsp;&nbsp;[测试用例](src/test/java/com/java/testdriven/chapter03/Course4DevTicTacToe4Test.java)  
     5.	[代码覆盖率](src/main/java/com/java/testdriven/chapter03/Course5CodeCoverage.java)
-    6. [更多练习](src/main/java/com/java/testdriven/chapter03/Course6MoreExercises.java)
+    6. [更多练习](src/main/java/com/java/testdriven/chapter03/Course6MoreExercises.java)  
+- 四、[单元测试——专注于当下而非过往](src/main/java/com/java/testdriven/chapter04)  
+     1.	[单元测试](src/main/java/com/java/testdriven/chapter04/Course10UnitTesting.java)  
+     	1.1	[何为单元测试](src/main/java/com/java/testdriven/chapter04/Course11WhatUnitTesting.java)  
+     	1.2	[为何要进行单元测试](src/main/java/com/java/testdriven/chapter04/Course12WhyUnitTesting.java)  
+     	1.3	[代码重构](src/main/java/com/java/testdriven/chapter04/Course13CodeRefactor.java)  
+     	1.4	[为何不只使用单元测试](src/main/java/com/java/testdriven/chapter04/Course14NotExclusively.java)  
+     2.	[TDD 中的单元测试](src/main/java/com/java/testdriven/chapter04/Course2UnitTestingWithTDD.java)   
+     3.	[TestNG](src/main/java/com/java/testdriven/chapter04/Course30TestNG.java)  
+     	3.1	[注解 @Test](src/main/java/com/java/testdriven/chapter04/Course31Test.java)  
+     	3.2	[注解 @BeforeSuite、 @BeforeTest、 @BeforeGroups、 @AfterGroups、 @AfterTest和 @AfterSuite](src/main/java/com/java/testdriven/chapter04/Course32BeforeSuite.java)  
+     	3.3	[注解 @BeforeClass 和 @AfterClass](src/main/java/com/java/testdriven/chapter04/Course33BeforeClass.java)  
+     	3.4	[注解 @BeforeMethod 和 @AfterMethod](src/main/java/com/java/testdriven/chapter04/Course34BeforeMethod.java)  
+     	3.5	[注解参数 @Test(enable = false)](src/main/java/com/java/testdriven/chapter04/Course35Enable.java)  
+     	3.6	[注解参数 @Test(expectedExceptions = SomeClass.class)](src/main/java/com/java/testdriven/chapter04/Course36ExpectedExceptions.java)   
+     	3.7	[TestNG 和 JUnit 差别小结](src/main/java/com/java/testdriven/chapter04/Course37vsJUnit.java)   
+     4.	[“遥控军舰”的需求](src/main/java/com/java/testdriven/chapter04/Course4Ship.java)   
+     5.	[开发“遥控军舰”](src/main/java/com/java/testdriven/chapter04/Course5DevShipAll.java)&nbsp;&nbsp;&nbsp;[实现](src/main/java/com/java/testdriven/chapter04/Ship.java)&nbsp;&nbsp;&nbsp;[测试用例](src/test/java/com/java/testdriven/chapter04/ShipSpec.java)   
+     	5.1	创建项目    
+     	5.2	辅助类   
+     	5.3	需求1  
+     	5.4	需求2  
+     	5.5	需求3  
+     	5.6	需求4  
+     	5.7	需求4  
+     	5.8	需求4
