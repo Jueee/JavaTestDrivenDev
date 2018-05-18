@@ -14,7 +14,7 @@ public class Course4DevTicTacToeAllTest {
 	@Rule
 	public ExpectedException exception = ExpectedException.none();	
 	
-	private Course4DevTicTacToeAll ticTacToe;
+	public Course4DevTicTacToeAll ticTacToe;
 	
 	
 	/***    ----------需求一测试------------    ***/

@@ -10,7 +10,7 @@ package com.java.testdriven.chapter03;
 public class Course4DevTicTacToeAll {
 
 	
-	private Character[][] board = {{'\0','\0','\0'},{'\0','\0','\0'},{'\0','\0','\0'}};
+	protected Character[][] board = {{'\0','\0','\0'},{'\0','\0','\0'},{'\0','\0','\0'}};
 
 	
 	/**
@@ -31,7 +31,7 @@ public class Course4DevTicTacToeAll {
 		}
 		return "No winner";
 	}
-	private void checkAxis(int axis) {
+	protected void checkAxis(int axis) {
 		if (axis < 1 || axis >3) {
 			throw new RuntimeException("is outside board");
 		}
@@ -42,7 +42,7 @@ public class Course4DevTicTacToeAll {
 	 *	@param y
 	 *	@param lastPlayer
 	 */
-	private void setBox(int x,int y,char lastPlayer) {
+	protected void setBox(int x,int y,char lastPlayer) {
 		if (board[x-1][y-1] != '\0') {
 			throw new RuntimeException("Box is occupied");
 		} else {
@@ -66,7 +66,7 @@ public class Course4DevTicTacToeAll {
 	/**
 	 * 	为跟踪接下来该谁下，需要存储前一次下棋的玩家：
 	 */
-	private char lastPlayer = '\0';
+	protected char lastPlayer = '\0';
 	
 	public char nextPlayer() {
 		// 如果前一次是玩家 X 下的，接下来应轮到玩家 O 。
@@ -82,7 +82,7 @@ public class Course4DevTicTacToeAll {
 	 * 	检查获胜条件：只需检查与最后一个棋子的位置相关的获胜条件
 	 *	@return
 	 */
-	private boolean isWin(int x,int y) {
+	protected boolean isWin(int x,int y) {
 		int playerTotal = lastPlayer*SIZE;
 		char diagonal1 = '\0';	// 从左上角到右下角的整条对角线和
 		char diagonal2 = '\0';	// 从左下角到右上角的整条对角线和
