@@ -8,11 +8,7 @@ import org.jongo.MongoCollection;
 import com.mongodb.DB;
 import com.mongodb.MongoClient;
 
-/**
- * 	开发“井字游戏”第二版
- *	
- *	@author hzweiyongqiang
- */
+
 /***    ----------需求 1------------
  *		实现一个保存单步棋——包含轮次、X和Y坐标以及玩家（X或O）——的选项。   ***/
 public class Course41DevTicTacToeV2 {
