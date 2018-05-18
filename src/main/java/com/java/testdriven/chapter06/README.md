@@ -14,9 +14,9 @@ TDD 旨在提高速度。  我们要快速验证理念、概念或实现是否�
 4.	[开发“井字游戏”第二版](Course40DevTicTacToeV2.java)   
 	4.1	[需求1](Course41DevTicTacToeV2)  
 	4.2	[需求2](Course42DevTicTacToeV2)   
-5.	[集成测试](Course50IntegrationTests.java)
-	5.1	[分离测试](Course51TestsSeparation.java)
-	5.2	[集成测试](Course52IntegrationTest.java)
+5.	[集成测试](Course50IntegrationTests.java)  
+	5.1	[分离测试](Course51TestsSeparation.java)  
+	5.2	[集成测试](Course52IntegrationTest.java)  
     
 ##### 小结 #####
 -	模拟和监视技术用于隔离其他代码和第三方库，需要快速编写代码和运行测试时必不可少。
