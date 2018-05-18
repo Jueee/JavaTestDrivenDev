@@ -139,9 +139,11 @@ public class Course3TestTheLast {
 
 	/***    ----------需求 6------------
 	 *		玩家放入碟片后，如果将其3个以上碟片连成垂直线，该玩家将获胜。   ***/
+	
 	/***    ----------需求 7------------
 	 *		玩家放入碟片后，如果将其3个以上碟片连成水平线，该玩家将获胜。   ***/
-	/***    ----------需求 7------------
+	
+	/***    ----------需求 8------------
 	 *		玩家放入碟片后，如果将其3个以上碟片连成对角线，该玩家将获胜。   ***/
 	
 	private Color winner;
@@ -175,7 +177,7 @@ public class Course3TestTheLast {
 			System.out.println(currentPlayer + " wins");
 			return;
 		}
-		// 检查对角线方向(左上到右下)
+		// 检查对角线方向(从右上角到左下角的对角线)
 		int startOffset = Math.min(col, row);
 		int column = col - startOffset, auxRow = row - startOffset;
 		stringJoiner = new StringJoiner("");
@@ -187,7 +189,7 @@ public class Course3TestTheLast {
 			System.out.println(currentPlayer + " wins");
 			return;
 		}
-		// 检查对角线方向(左下到右上)
+		// 检查对角线方向(从右下角到左上角的对角线)
 		startOffset = Math.min(col, ROWS - 1 - row);
 		column = col - startOffset;
 		auxRow = row + startOffset;

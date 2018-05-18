@@ -76,3 +76,8 @@ Farcic, Viktor, and Alex Garcia. Test-Driven Java Development. Packt Publishing 
      	3.7	[TestNG 和 JUnit 差别小结](src/main/java/com/java/testdriven/chapter04/Course37vsJUnit.java)   
      4.	[“遥控军舰”的需求](src/main/java/com/java/testdriven/chapter04/Course4Ship.java)   
      5.	[开发“遥控军舰”](src/main/java/com/java/testdriven/chapter04/Course5DevShipAll.java)&nbsp;&nbsp;&nbsp;[实现](src/main/java/com/java/testdriven/chapter04/Ship.java)&nbsp;&nbsp;&nbsp;[测试用例](src/test/java/com/java/testdriven/chapter04/ShipSpec.java)   
+- 五、[设计——难以测试说明设计不佳](src/main/java/com/java/testdriven/chapter05)  
+    1.	[为何要关心设计](src/main/java/com/java/testdriven/chapter05/Course1CareDesign.java)  
+    2.	[Connect4](src/main/java/com/java/testdriven/chapter05/Course2Connect4.java)   
+    3.	[完成 Connect4 实现后再测试](src/main/java/com/java/testdriven/chapter05/Course3TestTheLast.java)&nbsp;&nbsp;&nbsp;[测试用例](src/test/java/com/java/testdriven/chapter05/Course3TestTheLastTest.java)  
+    4.	[使用 TDD 实现 Connect4](src/main/java/com/java/testdriven/chapter05/Course4TheTDD.java)&nbsp;&nbsp;&nbsp;[测试用例](src/test/java/com/java/testdriven/chapter05/Course4TheTDDTest.java)

@@ -24,14 +24,6 @@
 	3.7	[TestNG 和 JUnit 差别小结](Course37vsJUnit.java)   
 4.	[“遥控军舰”的需求](Course4Ship.java)   
 5.	[开发“遥控军舰”](Course5DevShipAll.java)&nbsp;&nbsp;&nbsp;[实现](Ship.java)   
-	5.1	创建项目    
-	5.2	辅助类   
-	5.3	需求1  
-	5.4	需求2  
-	5.5	需求3  
-	5.6	需求4  
-	5.7	需求4  
-	5.8	需求4  
     
 ##### 小结 #####
 -	介绍如何每次专注于一个单元。进行单元测试时，应专注于当前的单元。 
