@@ -5,6 +5,7 @@
 	<artifactId>JavaTestDrivenDev</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>JavaTestDrivenDev</name>
+	<packaging>war</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 		<junit.version>4.12</junit.version>
@@ -12,6 +13,9 @@
 		<hamcrest.version>1.3</hamcrest.version>
 		<assertj.version>2.5.0</assertj.version>
 		<cucumber.version>1.2.2</cucumber.version>
+		<glassfish.jersey.version>2.17</glassfish.jersey.version>
+		<jetty.plugin.version>6.1.24</jetty.plugin.version>
+		<jetty.version>9.1.1.v20140108</jetty.version>
 	</properties>
 	<dependencies>
 		<!-- 测试框架 JUnit -->
@@ -22,99 +26,162 @@
 		</dependency>
 		<!-- 测试框架 TestNG -->
 		<dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testng.version}</version>
-        </dependency>
-        <!-- 定义匹配规则的框架 Hamcrest -->
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-all</artifactId>
-            <version>${hamcrest.version}</version>
-        </dependency>
-        <!-- 流式断言器 AssertJ -->
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-            <version>${assertj.version}</version>
-        </dependency>
-        <!-- MongoDB驱动程序 -->
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongo-java-driver</artifactId>
-            <version>2.11.3</version>
-        </dependency>
-        <!-- 能够轻松访问MongoDB集合的小型项目 Jongo -->
-        <dependency>
-            <groupId>org.jongo</groupId>
-            <artifactId>jongo</artifactId>
-            <version>1.1</version>
-        </dependency>
-        <!-- 模拟框架 Mockito：创建测试替身 -->
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>1.8.4</version>
-        </dependency>
-        <!-- 模拟框架 EasyMock：创建测试替身 -->
-        <dependency>
-            <groupId>org.easymock</groupId>
-            <artifactId>easymock</artifactId>
-            <version>3.4</version>
-        </dependency>
-        <!-- Web测试工具：Selenium -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>2.48.2</version>
-        </dependency>
-        <!-- Web测试工具：Selenide -->
-        <dependency>
-            <groupId>com.codeborne</groupId>
-            <artifactId>selenide</artifactId>
-            <version>2.17</version>
-        </dependency>
-        <!-- Web测试工具：PhantomJS浏览器驱动 -->
-        <dependency>
-            <groupId>com.codeborne</groupId>
-            <artifactId>phantomjsdriver</artifactId>
-            <version>1.2.1</version>
-        </dependency>
-        <!-- BDD框架：JBehave -->
-        <dependency>
-            <groupId>org.jbehave</groupId>
-            <artifactId>jbehave-core</artifactId>
-            <version>3.9.5</version>
-        </dependency>
-        <!-- BDD框架：Cucumber -->
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+		</dependency>
+		<!-- 定义匹配规则的框架 Hamcrest -->
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>${hamcrest.version}</version>
+		</dependency>
+		<!-- 流式断言器 AssertJ -->
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<version>${assertj.version}</version>
+		</dependency>
+		<!-- MongoDB驱动程序 -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.11.3</version>
+		</dependency>
+		<!-- 能够轻松访问MongoDB集合的小型项目 Jongo -->
+		<dependency>
+			<groupId>org.jongo</groupId>
+			<artifactId>jongo</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<!-- 模拟框架 Mockito：创建测试替身 -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.8.4</version>
+		</dependency>
+		<!-- 模拟框架 EasyMock：创建测试替身 -->
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymock</artifactId>
+			<version>3.4</version>
+		</dependency>
+		<!-- Web测试工具：Selenium -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>2.48.2</version>
+		</dependency>
+		<!-- Web测试工具：Selenide -->
+		<dependency>
+			<groupId>com.codeborne</groupId>
+			<artifactId>selenide</artifactId>
+			<version>2.17</version>
+		</dependency>
+		<!-- Web测试工具：PhantomJS浏览器驱动 -->
+		<dependency>
+			<groupId>com.codeborne</groupId>
+			<artifactId>phantomjsdriver</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<!-- BDD框架：JBehave -->
+		<dependency>
+			<groupId>org.jbehave</groupId>
+			<artifactId>jbehave-core</artifactId>
+			<version>3.9.5</version>
+		</dependency>
+		<!-- BDD框架：Cucumber -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			<version>${glassfish.jersey.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.ext</groupId>
+			<artifactId>jersey-spring3</artifactId>
+			<version>${glassfish.jersey.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json</artifactId>
+			<version>2.0-m05-1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>${jetty.plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>8.1.8.v20121106</version>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jetty.version}</version>
+            </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.7.2</version>
 			</plugin>
 			<plugin>
-		        <groupId>org.apache.maven.plugins</groupId>
-		        <artifactId>maven-compiler-plugin</artifactId>
-		        <version>3.6.0</version>
-		        <configuration>
-		          <source>${java.version}</source>
-		          <target>${java.version}</target>
-		        </configuration>
-		      </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.0</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
 		</plugins>
 		<finalName>JavaTestDrivenDev</finalName>
 	</build>
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>xml-maven-plugin</artifactId>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
