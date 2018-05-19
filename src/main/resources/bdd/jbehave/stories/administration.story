@@ -3,38 +3,38 @@ In order to manage the book store collection
 As a store administrator
 I want to be able to add, update and remove books
 
-Scenario: 用户应当可以展示图书细节
+Scenario: Book details form should have all fields
 
-Given 用户当前在图书页面
-Then 字段bookId存在
-Then 字段bookTitle存在
-Then 字段bookAuthor存在
-Then 字段bookDescription存在
+Given user is on the books screen
+Then field bookId exists
+Then field bookTitle exists
+Then field bookAuthor exists
+Then field bookDescription exists
 
-Scenario: 用户应当可以创建一本新书
+Scenario: User should be able to create a new book
 
-Given 用户当前在图书页面
-When 用户点击newBook按钮
-When 用户为图书表单设置值
-When 用户点击saveBook按钮
-Then 保存图书
+Given user is on the books screen
+When user clicks the button newBook
+When user sets values to the book form
+When user clicks the button saveBook
+Then book is stored
 
-Scenario: 用户应当可以展示图书细节
+Scenario: User should be able to display book details
 
-Given 用户当前在图书页面
-When 用户选择一本书
-Then 图书表单包含所有数据
+Given user is on the books screen
+When user selects a book
+Then book form contains all data
 
-Scenario: 用户应当可以更新图书细节
+Scenario: User should be able to update book details
 
-Given 用户当前在图书页面
-When 用户选择一本书
-When 用户为图书表单设置值
-Then 保存图书
+Given user is on the books screen
+When user selects a book
+When user sets new values to the book form
+Then book is updated
 
-Scenario: 用户应当可以删除图书
+Scenario: User should be able to delete a book
 
-Given 用户当前在图书页面
-When 用户选择一本图书
-When 用户点击deleteBook按钮
-Then 删除图书
+Given user is on the books screen
+When user selects a book
+When user clicks the button deleteBook
+Then book is removed

@@ -61,18 +61,6 @@ public class Course41JBehaveRunner extends JUnitStories{
 	 */
 	@Override
 	public InjectableStepsFactory stepsFactory() {
-		return new InstanceStepsFactory(configuration(), new Steps());
+		return new InstanceStepsFactory(configuration(), new Course44JBehaveSteps());
 	}
 }
-class Steps{
-	
-}
-/**
- * 	报错：
-Processing system properties {}
-Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,failOnStoryTimeout=false,threads=1]
-Generating reports view to 'JavaTestDrivenDev\target\jbehave' using formats '[]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
-java.io.FileNotFoundException: JavaTestDrivenDev\target\jbehave\storyDurations.props (系统找不到指定的文件。)
-Reports view generated with 0 stories (of which 0 pending) containing 0 scenarios (of which 0 pending)
-
- */
