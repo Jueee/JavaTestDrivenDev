@@ -3,6 +3,7 @@ package com.java.testdriven.chapter07;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 
+import org.jbehave.core.annotations.AfterStory;
 import org.jbehave.core.annotations.BeforeStory;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Pending;
@@ -39,6 +40,14 @@ public class Course44JBehaveSteps {
 			WebDriverRunner.setWebDriver(webDriver);
 			webDriver.manage().window().setSize(new Dimension(1024, 768));
 		}
+	}
+	
+	/**
+	 * 	跑完要关掉 quit()
+	 */
+	@AfterStory
+	public void afterStory() {
+		webDriver.quit();
 	}
 	
 	

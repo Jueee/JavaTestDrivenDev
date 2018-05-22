@@ -5,7 +5,6 @@
 	<artifactId>JavaTestDrivenDev</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>JavaTestDrivenDev</name>
-	<packaging>war</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 		<junit.version>4.12</junit.version>
@@ -127,11 +126,23 @@
 			<artifactId>jersey-spring3</artifactId>
 			<version>${glassfish.jersey.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-grizzly2-servlet</artifactId>
+            <version>${glassfish.jersey.version}</version>
+            <scope>test</scope>
+        </dependency>
 		<dependency>
 			<groupId>org.glassfish.jersey.media</groupId>
 			<artifactId>jersey-media-json</artifactId>
 			<version>2.0-m05-1</version>
 		</dependency>
+        <dependency>
+            <groupId>com.jayway.restassured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>2.4.1</version>
+            <scope>test</scope>
+        </dependency>
 	</dependencies>
 	<build>
 		<plugins>
