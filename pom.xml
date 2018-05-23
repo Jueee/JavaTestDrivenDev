@@ -100,7 +100,7 @@
 			<artifactId>cucumber-junit</artifactId>
 			<version>${cucumber.version}</version>
 		</dependency>
-		<!-- 
+		<!-- 与 spring-boot jar 冲突
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>

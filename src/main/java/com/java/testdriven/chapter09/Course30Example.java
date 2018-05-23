@@ -14,7 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 	com.java.testdriven.chapter09.FibonacciFeatureConfig
  * 	四、【 fibonacci 服务类】
  * 	当前其计算代码总是返回 -1 ，这旨在模拟一项未完成的功能
- * 	com.java.testdriven.chapter09.FibonacciService
+ * 	com.java.testdriven.chapter09.Course31Fibonacci
  * 	五、【存储计算结果的包装器】
  * 	com.java.testdriven.chapter09.FibonacciNumber
  * 	六、【负责处理 fibonacci 服务查询】
@@ -82,4 +82,6 @@ public class Course30Example {
 	There was an unexpected error (type=Service Unavailable, status=503).
 	This feature is currently unavailable
  * 
+ * 
+ * 	从中可知，收到的错误对应于REST API在功能被禁用时发送的错误。如果功能被启用，返回的结果将为 -1 。
  */

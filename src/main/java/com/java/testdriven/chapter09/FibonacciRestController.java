@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
  *	
  *	@author hzweiyongqiang
  */
-@RestController
+@RestController		// REST API负责生成用JSON对象表示的响应，使用的注解为 @RestController。
 public class FibonacciRestController {
 
 	@Autowired
@@ -26,7 +26,7 @@ public class FibonacciRestController {
 	
 	@Autowired
 	@Qualifier("fibonacci")
-	private FibonacciService fibonacciService;
+	private Course31Fibonacci fibonacciService;
 	
 	/**
 	 * 	负责核实应当启用还是禁用 fibonacci 服务
