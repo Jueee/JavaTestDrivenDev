@@ -14,7 +14,6 @@ import org.junit.Test;
 import com.java.testdriven.chapter08.Course12LackInjection.Email;
 import com.java.testdriven.chapter08.Course12LackInjection.Employee;
 import com.java.testdriven.chapter08.Course12LackInjection.MessageSender;
-import com.java.testdriven.chapter08.Course14ApplyChangeAlgorithm.BirthdayGreetingService2;
 
 /**
  * 	端到端测试
