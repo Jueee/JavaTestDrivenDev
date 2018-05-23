@@ -19,7 +19,7 @@ TDD流程是一套最重要的实践。
 应使用持续集成工具从仓库提取代码，对其进行编译并运行测试。诸如：
 1.	Jenkins（[http://jenkins-ci.org/](http://jenkins-ci.org/)）
 2.	Hudson（[http://hudson-ci.org/](http://hudson-ci.org/)）
-3.	Travis（[https:// travis-ci.org/](https:// travis-ci.org/)）
+3.	Travis（[https://travis-ci.org/](https://travis-ci.org/)）
 4.	Bamboo（[https://www.atlassian.com/software/bamboo](https://www.atlassian.com/software/bamboo)） 
 
 ##### 仅当所有测试都通过后才编写新测试 #####

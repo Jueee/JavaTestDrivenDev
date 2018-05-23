@@ -11,9 +11,3 @@ If you always do what you always did, then you will always get what you always g
 	2.4	[工具](Course24Tools.md)   
 3.	[这只是开始](Course3JustBeginning.md)     
     
-##### 小结 #####
--	功能开关为在生产环境中隐藏和处理未完成的功能提供了不错的途径。
--	根据需要将代码部署到生产环境时，使用功能开关好像有点怪。
--	但需要持续集成、持续交付或持续部署时，经常使用功能开关。
--	实现了两种不同的方法：针对简单REST API的功能开关；在Web应用程序中使用功能开关。
-
